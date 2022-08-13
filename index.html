@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css"/>
+    <title>CSS</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to the Protfolio</h1>
+        <div>
+            <a name="Top of the page"></a>
+        </div>
+      <h1 id="welcome">Welcome to the Protfolio</h1>
       <nav>
         <h1>Home</h1>
         <h1>About</h1>
@@ -19,10 +23,10 @@
     </header>
     <main>
         <div class="first">
-            <h2>
+            <h2 class="about">
                 About
             </h2>
-            <p>
+            <p class="paragraph1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo harum laudantium, eos velit aliquid sequi. Quod pariatur quam, itaque, cum officiis, delectus eos vero doloremque reiciendis animi aliquam quo?
                 Ducimus rerum, fuga alias quod perferendis nobis. Sunt vero ipsa veritatis unde eum ut nostrum ducimus, recusandae hic earum fugit? Cum nostrum quis ex repudiandae officia dolore? Reiciendis, nemo consectetur?
             </p>
@@ -48,12 +52,12 @@
         </div>
         <div class="third">
             <table> Table One
-                <tr>
+                <tr id="table1">
                     <th>aasdaasd</th>
                     <th>dskjhdad</th>
                     <th>dksjdkajhasd</th>
                 </tr>
-                <tr>
+                <tr id="table2">
                     <td>dsdadasad</td>
                     <td>dsasdwwdwd</td>
                     <td>dasdsadaddsd</td>
@@ -61,7 +65,7 @@
             </table>
         </div>
         <figcaption>
-            <img src="./Yazid Ouerteteni CV.jpg"/>
+            <img id="cv" src="./Yazid Ouerteteni CV.jpg"/>
             <audio controls >
                 <source src="./trackone.mp3" type="auido/mpeg" /> your browser does not support this audio
             </audio>
@@ -72,6 +76,7 @@
     </main>
     <footer>
         <form>
+            <div class="formdiv">
             <label>First Name</label>
             <input type="text" name="First Name" placeholder="Enter your name please"/>
             <br>
@@ -81,10 +86,15 @@
             <input type="Password" name="password"/>
             <button type="submit">Submit Name</button><br>
             Search <input type = "text" name = "search" />
-            <select>
+            <select class="options">
                 <option value="request work">request work</option>
                 <option value="request portfolio">request portfolio</option>
             </select>
+             </div>
+            <div class="footer div">
+                <a id="gomycode" href="https://gomycode.tn/">Take me to GoMyCode's Website</a>
+                <a href="#Top of the page"> Let go to top</a>
+            </div>
         </form>
     </footer>
   </body>
